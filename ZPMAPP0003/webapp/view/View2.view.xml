@@ -1,0 +1,498 @@
+<mvc:View controllerName="hcbr.usp.brZPMAPP0003.controller.View2" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id='app'>
+		<pages>
+			<Page title="Ficha Patrimonial">
+				<Button press="navi" text="Imprimir"></Button>
+				<Panel expandable="false" expanded="false" headerText="Ficha Patrimonial" width="auto" class="sapUiResponsiveMargin">
+					<content>
+						<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form1">
+							<sap.ui.layout.form:formContainers>
+								<sap.ui.layout.form:FormContainer id="__container1">
+									<sap.ui.layout.form:formElements>
+										<sap.ui.layout.form:FormElement label="Centro" id="elementCC">
+											<sap.ui.layout.form:fields>
+												<Input width="40%" id="Werks"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+									</sap.ui.layout.form:formElements>
+								</sap.ui.layout.form:FormContainer>
+							</sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:formContainers>
+								<sap.ui.layout.form:FormContainer id="__container2">
+									<sap.ui.layout.form:formElements>
+										<sap.ui.layout.form:FormElement label="Inventário" id="elementINVNR">
+											<sap.ui.layout.form:fields>
+												<Input width="70%" id="Invnr"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+									</sap.ui.layout.form:formElements>
+								</sap.ui.layout.form:FormContainer>
+							</sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:formContainers>
+								<sap.ui.layout.form:FormContainer id="__container3">
+									<sap.ui.layout.form:formElements>
+										<sap.ui.layout.form:FormElement label="Equipamento" id="elementEqui">
+											<sap.ui.layout.form:fields>
+												<Input width="70%" id="Equnr"/>
+											</sap.ui.layout.form:fields>
+										</sap.ui.layout.form:FormElement>
+									</sap.ui.layout.form:formElements>
+								</sap.ui.layout.form:FormContainer>
+							</sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:layout>
+								<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+									emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="3" columnsM="3" singleContainerFullSize="false"
+									id="__layout1"/>
+							</sap.ui.layout.form:layout>
+						</sap.ui.layout.form:Form>
+					</content>
+				</Panel>
+				<Panel expandable="true" expanded="false" headerText="Cabeçalho" width="auto" class="sapUiResponsiveMargin">
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form2">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container4">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Tipo de Tombamento" id="elementC">
+										<sap.ui.layout.form:fields>
+											<Input width="40%" id="TipoTombamento"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container5">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Quantidade Incorporada" id="elementIve">
+										<sap.ui.layout.form:fields>
+											<Input width="70%" id="QtdeIncorporada"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container6">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Processo" id="elementEqu">
+										<sap.ui.layout.form:fields>
+											<Input width="70%" id="Processo2"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container7">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Descrição" id="elementDes">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="Descricao"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container8">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Observação" id="elementObs">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="Observacao"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+								emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false"
+								id="__layout2"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</Panel>
+				<Panel expandable="true" expanded="false" headerText="Desincorporação" width="auto" class="sapUiResponsiveMargin">
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form3">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container9">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Processo" id="elementPro">
+										<sap.ui.layout.form:fields>
+											<Input width="40%" id="Processo"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container10">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Tipo" id="elementTipo">
+										<sap.ui.layout.form:fields>
+											<Input width="70%" id="Tipo"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container11">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Observação" id="elementObservacao">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="Observacao2"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+								emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"
+								id="__layout3"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</Panel>
+				<Panel expandable="true" expanded="false" headerText="Dados Contabilidade" width="auto" class="sapUiResponsiveMargin">
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form4">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container12">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Dt.Contab.Inc" id="elementDT_CONTAB_INC">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="DtContabInc"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container13">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Dt.Contab.Desinc" id="elementDT_CONTAB_DESINC">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="DtContabDesinc"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container14">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Usuário Contabil Incorp." id="elementUSU_CONTAB_INC">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="UsuContabDesinc"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container15">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Usuário Contabil" id="elementUSU_CONTAB_DESINC">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="UsuContabInc"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container16">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Conta" id="elementConta">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="Conta"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+								emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="3" columnsM="3" singleContainerFullSize="false"
+								id="__layout4"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</Panel>
+				<Panel expandable="true" expanded="false" headerText="Transferência" width="auto" class="sapUiResponsiveMargin">
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form5">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="_container16">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Complemento" id="elementComplemento">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="Complemento"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container17">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Inicio" id="elementINICIO">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="Inicio"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container18">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Fim" id="elementFim">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="Fim"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+								emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="3" columnsM="3" singleContainerFullSize="false"
+								id="__layout5"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</Panel>
+				<Panel expandable="true" expanded="false" headerText="Empréstimo" width="auto" class="sapUiResponsiveMargin">
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form6">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="_container17">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Usuário" id="elementUSUARIO_EMPRESTIMO">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="UsuarioEmprestimo"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container20">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Documento" id="elementDOCUMENTO_EMPRESTIMO">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="DocumentoEmprestimo"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container21">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Empréstimo" id="elementEMPRESTIMO">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="Emprestimo"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container22">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Devolução" id="elementDEVOLUCAO_EMPRESTIMO">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="DevolucaoEmprestimo"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container23">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Observação" id="elementOBS">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="Obs"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+								emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="3" columnsM="3" singleContainerFullSize="false"
+								id="__layout6"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</Panel>
+				<Panel expandable="true" expanded="false" headerText="Auditorias" width="auto" class="sapUiResponsiveMargin">
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form7">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="_container21">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Inicio" id="elementINICIO_AUD">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="InicioAud"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container31">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Fim" id="elementFIM_AUD">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="FimAud"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container32">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Ocorrência" id="elementOCORRENCIA_AUD">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="OcorrenciaAud"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+								emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="3" columnsM="3" singleContainerFullSize="false"
+								id="__layout7"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</Panel>
+				<Panel expandable="true" expanded="false" headerText="Ocorrências" width="auto" class="sapUiResponsiveMargin">
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form8">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="_container33">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Data" id="elementDATA_OCO">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="DataOco"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container34">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Tipo da Ocorrência" id="elementTP_OCOR">
+										<sap.ui.layout.form:fields>
+											<Input width="50%" id="TpOcor"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container35">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Ocorrência" id="elementOCORRENCIA">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="Ocorrencia"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+								emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="3" columnsM="3" singleContainerFullSize="false"
+								id="__layout8"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</Panel>
+				<Panel expandable="true" expanded="false" headerText="Ocorrências de Entregas" width="auto" class="sapUiResponsiveMargin">
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form10">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="_container41">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Data" id="elementDATA_OCO_ENTREGA">
+										<sap.ui.layout.form:fields>
+											<Input width="40%" id="DataOcoEntrega"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container42">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Tipo da Ocorrência" id="elementTP_OCO_ENTREGA">
+										<sap.ui.layout.form:fields>
+											<Input width="20%" id="TpOcoEntrega"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container44">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Descrição da Ocorrência de Entrega" id="elementDESC_OCO_ENTREGAA">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="DescOcoEntrega"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+								emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"
+								id="__layout9"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</Panel>
+				<Panel expandable="true" expanded="false" headerText="Rechapeamento" width="auto" class="sapUiResponsiveMargin">
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form11">
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="_container51">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Data" id="elementDATA_RECH">
+										<sap.ui.layout.form:fields>
+											<Input width="40%" id="DataRech"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container52">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Tipo do Rechapeamento" id="elementTP_RECHAPEAMENTO">
+										<sap.ui.layout.form:fields>
+											<Input width="20%" id="TpRechapeamento"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:formContainers>
+							<sap.ui.layout.form:FormContainer id="__container53">
+								<sap.ui.layout.form:formElements>
+									<sap.ui.layout.form:FormElement label="Observação" id="elementOBSERVACAO_RECH">
+										<sap.ui.layout.form:fields>
+											<Input width="100%" id="ObservacaoRech"/>
+										</sap.ui.layout.form:fields>
+									</sap.ui.layout.form:FormElement>
+								</sap.ui.layout.form:formElements>
+							</sap.ui.layout.form:FormContainer>
+						</sap.ui.layout.form:formContainers>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout labelSpanXL="4" labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false"
+								emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"
+								id="__layout10"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</Panel>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

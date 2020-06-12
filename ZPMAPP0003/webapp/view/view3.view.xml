@@ -1,0 +1,10 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="hcbr.usp.brZPMAPP0003.controller.view3"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+		<App>
+			<PDFViewer source="{/Source}" title="SAP" height="600px">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</PDFViewer>
+	</App>
+</mvc:View>
